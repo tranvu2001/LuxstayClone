@@ -251,7 +251,7 @@ svg {
 .slider__container {
     width: 1172px;
     height: 263px;
-    background: url(./assest/img/slide1.png) no-repeat center center / cover;
+    background: url(../assest/img/slide1.png) no-repeat center center / cover;
     margin: 44px auto;
     border-radius: 20px;
     cursor: pointer;
