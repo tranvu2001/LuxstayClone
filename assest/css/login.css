@@ -79,6 +79,108 @@
     margin-top: -7px;
 }
 
+.navbar-right__currency {
+    position: absolute;
+    background-color: var(--white-color);
+    top: 80px;
+    right: 45px;
+    width: 470px;
+    height: 154px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
+    border: 1px solid #d8d8d8;
+    display: none;
+    animation: showModal linear 0.2s;
+    z-index: 10;
+}
+
+.navbar-right__currency::before {
+    content: "";
+    position: absolute;
+    transform: rotate(-45deg);
+    top: -11px;
+    right: 31px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--white-color);
+    border-top-right-radius: 4px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-style: solid;
+    border-top-color: #d8d8d8;
+    border-right-color: #d8d8d8;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    /* z-index: -1; */
+    /* box-shadow: 0 0 2px rgba(0, 0, 0, 0.6); */
+    /* background-color: var(--white-color); */
+}
+
+.navbar-right__currency--active {
+    display: block;
+}
+
+.countries {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 16px;
+    position: relative;
+}
+
+.countries .country-item {
+    cursor: pointer;
+}
+
+.countries--has-border-right::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    min-height: 134px;
+    width: 1px;
+    right: 0;
+    top: 48%;
+    transform: translateY(-50%);
+}
+
+.country-item {
+    display: flex;
+    align-items: center;
+}
+
+.country-item:hover .country-item__languages {
+    color: var(--hover-color);
+}
+
+.country-item__flag {
+    width: 18px;
+    height: 18px;
+    margin-right: 14px;
+}
+
+.country-item__languages {
+    margin-right: 10px;
+    font-size: 1.4rem;
+}
+
+.country-item__icon {
+    font-size: 0.9rem;
+}
+
+.country-item__unit {
+    margin-right: 18px;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.currency {
+    padding: 8px 10px;
+}
+
+.currency .country-item {
+    cursor: pointer;
+}
+
 /* Banner */
 
 .banner {

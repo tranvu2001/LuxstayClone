@@ -251,7 +251,7 @@ svg {
 .slider__container {
     width: 1172px;
     height: 263px;
-    background: url(./assest/img/slide1.png) no-repeat center center / cover;
+    background: url(/assest/img/slide1.png) no-repeat center center / cover;
     margin: 44px auto;
     border-radius: 20px;
     cursor: pointer;
@@ -323,17 +323,6 @@ svg {
     /* z-index: -1; */
     /* box-shadow: 0 0 2px rgba(0, 0, 0, 0.6); */
     /* background-color: var(--white-color); */
-}
-
-@keyframes showModal {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 .navbar-right__currency--active {

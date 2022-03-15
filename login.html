@@ -47,7 +47,41 @@
                         <span class="navbar-right__languages-text">VND</span>
                         <i class="navbar-right__languages-icon fas fa-sort-down"></i>
                         <div class="navbar-right__currency">
-                            <div class="grid__row-currency"></div>
+                            <div class="grid__row-currency">
+                                <div class="grid__column-2 grid__columm-currency-item">
+                                    <div class="countries countries--has-border-right">
+                                        <div class="country-item">
+                                            <img src="./assest/img/vi.svg" alt="flag" class="country-item__flag">
+                                            <p class="country-item__languages">Tiếng Việt</p>
+                                            <i class="country-item__icon fas fa-check"></i>
+                                        </div>
+                                        <div class="country-item">
+                                            <img src="./assest/img/vi.svg" alt="flag" class="country-item__flag">
+                                            <p class="country-item__languages">English</p>
+                                        </div>
+                                        <div class="country-item">
+                                            <img src="./assest/img/vi.svg" alt="flag" class="country-item__flag">
+                                            <p class="country-item__languages">Korean</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2 grid__columm-currency-item">
+                                    <div class="currency ">
+                                        <div class="country-item">
+                                            <p class="country-item__unit">VND</p>
+                                            <p class="country-item__languages">Tiếng Việt</p>
+                                            <i class="country-item__icon fas fa-check"></i>
+                                        </div>
+
+                                        <div class="country-item">
+                                            <p class="country-item__unit">USD</p>
+                                            <p class="country-item__languages">United States Dollar</p>
+                                            <!-- <i class="country-item__icon fas fa-check"></i> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -245,6 +279,17 @@
 
         </div>
     </div>
+    <script>
+        const languages = document.querySelector('.navbar-right__currency')
+        const navbarRightLanguages = document.querySelector('.navbar-right__languages')
+
+        console.log(languages);
+        const openModalLanguages = () => {
+            languages.classList.toggle('navbar-right__currency--active')
+        }
+
+        navbarRightLanguages.addEventListener('click', openModalLanguages)
+    </script>
 </body>
 
 </html>
