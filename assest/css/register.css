@@ -1,0 +1,360 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 4px;
+}
+
+.navbar-left__logo {
+    transition: fill linear 0.2s;
+}
+
+.navbar-left__logo-link:hover .navbar-left__logo {
+    fill: #f65e39;
+}
+
+.navbar-right {
+    display: flex;
+}
+
+.navbar-right__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    /* margin-left: 33px;  */
+}
+
+.navbar-right__item {
+    margin-right: 35px;
+}
+
+.navbar-right__item-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.navbar-right__item-link:hover {
+    color: var(--hover-color);
+}
+
+.navbar-right__item--active {
+    position: relative;
+}
+
+.navbar-right__item--active::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #fb9236;
+    border-radius: 50%;
+    right: -10px;
+    top: -5px;
+}
+
+.navbar-right__languages {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f6f6f6;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+.navbar-right__flag {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.navbar-right__languages-text {
+    font-size: 1.4rem;
+}
+
+.navbar-right__languages-icon {
+    margin-left: 5px;
+    font-size: 1.4rem;
+    margin-top: -7px;
+}
+
+/* Banner */
+
+.banner {
+    height: 170px;
+    background-image: linear-gradient(90deg, #f65e38, #f68a39, #f65e38);
+    position: relative;
+}
+
+.banner-info {
+    position: absolute;
+    margin: 32px 0 0 44px;
+}
+
+.banner-title,
+.banner-subtitle {
+    color: #fff;
+}
+
+.banner-title {
+    font-size: 2.2rem;
+}
+
+.banner-subtitle {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+/* Section */
+
+.media {
+    margin-top: 48px;
+}
+
+.media__img {
+    width: 57px;
+    height: 70px;
+}
+
+.media__title {
+    margin: 24px 0 14px 0;
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+.media__content {
+    font-size: 1.6rem;
+    color: #555;
+    line-height: 2.4rem;
+}
+
+/* Account */
+
+.container-account {
+    margin-top: -110px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.account {
+    background-color: #fff;
+    padding: 22px 36px;
+    box-shadow: 0 9px 46px 8px rgb(0 0 0 / 2%), 0 24px 38px 3px rgb(0 0 0 / 4%), 0 11px 15px -7px rgb(0 0 0 / 5%);
+    border-radius: 10px;
+}
+
+.account__form-title {
+    font-size: 2.2rem;
+}
+
+.input-group {
+    margin-top: 8px;
+}
+
+.form__email-label,
+.form__phone-label,
+.form__name-label,
+.form__last-name-label,
+.form__password-label,
+.form__confirm-password-label {
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+.account__form-email,
+.account__form-password,
+.account__form-confirm-password {
+    position: relative;
+}
+
+.form__email-input,
+.form__name-input,
+.form__last-name-input,
+.form__password-input,
+.form__confirm-password-input {
+    width: calc(310px - 24px);
+    height: 40px;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid #e6e6e6;
+    padding: 4px 19px 4px 19px;
+    transition: all linear 0.2s;
+}
+
+.form__email-input:focus,
+.form__name-input:focus,
+.form__last-name-input:focus,
+.form__password-input:focus,
+.form__confirm-password-input:focus {
+    border-color: #f65e39;
+    box-shadow: 0 0 5px 0 #f65e39;
+}
+
+.form__email-icon,
+.form__password-icon,
+.form__confirm-password-icon {
+    position: absolute;
+    right: 24px;
+    top: 16px;
+}
+
+.email-icon,
+.password-icon,
+.confirm-password-icon {
+    font-size: 1.6rem;
+}
+
+.form__phone,
+.form__name,
+.form__last-name,
+.form-password,
+.form__confirm-password {
+    margin-top: 20px;
+}
+
+.account__form-phone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.country {
+    width: 120px;
+    height: 45px;
+    background-color: #f6f6f6;
+    border-radius: 50px;
+    position: relative;
+}
+
+.code {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 24px;
+    top: 12px;
+    cursor: pointer;
+}
+
+.flag,
+.num {
+    margin-right: 8px;
+}
+
+.num {
+    font-size: 1.5rem;
+}
+
+.form__phone-input {
+    width: calc(176px - 32px);
+    height: 45px;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid #e6e6e6;
+    padding: 0 22px;
+}
+
+.text {
+    color: #999;
+}
+
+.submit {
+    margin-top: 32px;
+}
+
+.submit-btn {
+    width: 327px;
+    background-image: linear-gradient(90deg, #f65e38, #f68a39, #f65e38);
+    padding: 18px 25px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 50px;
+    /* border-color: #f65e39; */
+    border: none;
+    box-shadow: 0 1px 8px #f65e38;
+}
+
+.login,
+.accept {
+    margin-top: 32px;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.login__link {
+    text-decoration: none;
+    color: #f65e39;
+    font-weight: 550;
+}
+
+.accept {
+    margin-top: 32px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.accept-text {
+    text-decoration: none;
+    color: #222;
+    font-weight: 550;
+    transition: color linear 0.1s;
+}
+
+.accept-text:hover {
+    color: #f65e39;
+}
+
+.login-facebook__btn,
+.login-google__btn {
+    width: 316px;
+    height: 56px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.login-facebook__btn:hover .login-facebook__btn-link,
+.login-google__btn:hover .login-google__btn-link {
+    color: #f65e39;
+}
+
+.login-facebook__btn-link,
+.login-google__btn-link {
+    text-decoration: none;
+    color: #555;
+    font-size: 1.6rem;
+    transition: color linear 0.1s;
+}
+
+.facebook__btn-icon,
+.google__btn-icon {
+    position: absolute;
+    right: 26px;
+    top: 20px;
+}
+
+.footer {
+    margin-top: 80px;
+}
+
+.license {
+    min-height: 200px;
+    /* background-color: #f9f9f9; */
+    text-align: center;
+    border-top: 1px solid #f2f2f2;
+}
+
+.license-1,
+.license-2,
+.license-3 {
+    font-size: 1.4rem;
+    line-height: 0.2rem;
+    color: #999;
+}
+
+.license-1 {
+    padding-top: 28px;
+}
