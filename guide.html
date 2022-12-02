@@ -10,7 +10,15 @@
     <link rel="stylesheet" href="./assest/css/guide.css">
     <link rel="stylesheet" href="./assest/fonts/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assest/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
-    <script src="./js/guide.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link
+     href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Poppins:ital,wght@0,100;0,200;0,500;1,100;1,200;1,300&display=swap"
+    rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+        <script src="./js/guide.js" defer></script>
 </head>
 
 <body>
@@ -58,10 +66,238 @@
         </div>
 
         <div class="grid">
+            <div class="header--mobile">
+                <div class="navbar">
+                    <div class="navbar-left">
+                        <div class="navbar-left__logo">
+                            <a href="" class="navbar-left__logo-link">
+                                <svg version="1.1" viewBox="0 0 50 50" class="svg-icon svg-fill"
+                                    preserveAspectRatio="xMinYMin meet">
+                                    <path pid="0"
+                                        d="M25.093 0c13.781.06 24.94 11.317 24.882 25.106C49.917 38.894 38.663 50.058 24.88 50 11.1 49.942-.059 38.683.001 24.894.057 11.106 11.31-.058 25.092 0zm11.801 31.9L14.398 16.053c.241-.26.48-.518.74-.777 2.7-2.687 5.971-4.031 9.775-4.015 3.804.015 7.064 1.388 9.741 4.098.238.241.476.482.694.743l-5.951 4.133 2.381 1.688 5.153-3.576v.02L39.33 16.7c-.692-1.203-1.584-2.325-2.616-3.39-3.231-3.292-7.167-4.947-11.788-4.967-4.6-.019-8.53 1.603-11.809 4.867a17.806 17.806 0 00-2.682 3.408l1.429 1.004 23.429 16.51c-.24.26-.48.518-.74.777-2.7 2.687-5.971 4.011-9.775 3.996-3.803-.016-7.063-1.37-9.74-4.08-.258-.26-.496-.521-.734-.782l6.111-4.251-.139-.181-2.183-1.528-5.373 3.735v-.021l-2.377 1.65a17.824 17.824 0 002.654 3.43c3.253 3.291 7.169 4.946 11.769 4.965 4.62.021 8.549-1.602 11.83-4.866 1.06-1.075 1.96-2.21 2.682-3.406l-2.383-1.67z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="navbar-left__search">
+                            <div class="search search--focus">
+                                <i class="search-icon ti-search"></i>
+                                <input type="text" id="search-input" class="search-input search-input--focus"
+                                    placeholder="Tìm kiếm">
+                            </div>
+                            <div class="search__date">
+                                <i class="search__date-icon ti-calendar"></i>
+                                <span class="search__date-text">Ngày</span>
+                            </div>
+                            <div class="search__guest">
+                                <i class="search__guest-icon ti-user"></i>
+                                <p class="search__guest-text">Số khách</p>
+
+                            </div>
+                            <div class="search__guest--modal">
+                                <div class="guest__type adult">
+                                    <div class="guest__title">
+                                        <span>Người lớn</span>
+                                    </div>
+
+                                    <div class="control">
+                                        <div class="input-decrease">
+                                            <button class="btn minus__btn">
+                                                <i class="fa-solid fa-minus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="input-increase">
+                                            <button class="btn add__btn">
+                                                <i class="fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="input adult">
+                                            <input type="text" name="" class="input__inner input__adult" min="0"
+                                                max="10">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="guest__type child">
+                                    <div class="guest__title">
+                                        <span>Trẻ em</span>
+                                        <span>Tuổi từ 2-12</span>
+                                    </div>
+                                    <div class="control">
+                                        <div class="input-decrease">
+                                            <button class="btn minus__btn">
+                                                <i class="fa-solid fa-minus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="input-increase">
+                                            <button class="btn add__btn">
+                                                <i class="fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="input child">
+                                            <input type="text" name="" class="input__inner input__child" min="0"
+                                                max="10">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="guest__type baby">
+                                    <div class="guest__title">
+                                        <span>Em bé</span>
+                                        <span>Dưới 2 tuổi</span>
+                                    </div>
+                                    <div class="control">
+                                        <div class="input-decrease">
+                                            <button class="btn minus__btn">
+                                                <i class="fa-solid fa-minus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="input-increase">
+                                            <button class="btn add__btn">
+                                                <i class="fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="input">
+                                            <input type="text" name="" class="input__inner input__baby" min="0"
+                                                max="10">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn__bottom">
+                                    <button class="btn btn__clear">Xóa</button>
+                                    <button class="btn btn__apply">Áp dụng</button>
+                                </div>
+                            </div>
+                            <label for="search-input" class="search__button">
+                                <i class="search__button-icon ti-search"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="navbar-right">
+                        <ul class="navbar-right__list">
+                            <li class="navbar-right__item">
+                                <a href="guide.html" class="navbar-right__item-link">Guide</a>
+                            </li>
+                            <li class="navbar-right__item"><a href="host.html" class="navbar-right__item-link">Host</a>
+                            </li>
+                            <li class="navbar-right__item"><a href="register.html" class="navbar-right__item-link">Đăng
+                                    ký</a></li>
+                            <li class="navbar-right__item"><a href="login.html" class="navbar-right__item-link">Đăng
+                                    nhập</a></li>
+                                    <div class="navbar-right__languages">
+                                        <img src="./assest/img/vi.svg" alt="flag" class="navbar-right__flag">
+                                        <span class="navbar-right__languages-text">VND</span>
+                                        <i class="navbar-right__languages-icon fas fa-sort-down"></i>
+                                        <div class="navbar-right__currency ">
+                                            <div class="grid__row-currency">
+        
+                                                <div class="grid__column-2 grid__columm-currency-item">
+                                                    <div class="countries countries--has-border-right">
+                                                        <div class="country-item">
+                                                            <img src="./assest/img/vi.svg" alt="flag"
+                                                                class="country-item__flag">
+                                                            <p class="country-item__languages">Tiếng Việt</p>
+                                                            <i class="country-item__icon fas fa-check"></i>
+                                                        </div>
+                                                        <div class="country-item">
+                                                            <img src="./assest/img/vi.svg" alt="flag"
+                                                                class="country-item__flag">
+                                                            <p class="country-item__languages">English</p>
+                                                        </div>
+                                                        <div class="country-item">
+                                                            <img src="./assest/img/vi.svg" alt="flag"
+                                                                class="country-item__flag">
+                                                            <p class="country-item__languages">Korean</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="grid__column-2 grid__columm-currency-item">
+                                                    <div class="currency ">
+                                                        <div class="country-item">
+                                                            <p class="country-item__unit">VND</p>
+                                                            <p class="country-item__languages">Tiếng Việt</p>
+                                                            <i class="country-item__icon fas fa-check"></i>
+                                                        </div>
+        
+                                                        <div class="country-item">
+                                                            <p class="country-item__unit">USD</p>
+                                                            <p class="country-item__languages">United States Dollar</p>
+                                                            <!-- <i class="country-item__icon fas fa-check"></i> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+        
+                                            </div>
+                                        </div>
+        
+                                    </div>
+
+                        </ul>
+                    </div>
+                </div>
+                <button class="btn btn__close">x</button>
+            </div>
+
+            <div class="slider slider-mobile">
+
+
+                <!-- Wrapper for slide -->
+                <div class="slider__container">
+                    <div class="slides">
+                        <!-- radio buttin start -->
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+                        <!-- radio buttin end -->
+
+                        <!-- slide images start -->
+                        <div class="slide first">
+                            <img src="./assest/img/slide1.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./assest/img/slide2.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./assest/img/slide1.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./assest/img/slide2.png" alt="">
+                        </div>
+                        <!-- slide images end -->
+
+                        <!-- automatic navigation start -->
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                        <!-- automatic navigation end -->
+
+                    </div>
+                    <!-- manual navigation start -->
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                    <!-- manual navigation end -->
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+        
+
+        <div class="grid">
             <div class="navbar">
                 <div class="grid__row navbar__contain">
                     <div class="grid__column-3 navbar__menu">
-                        <i class="navbar__menu-icon ti-menu"></i>
+                        <span class="back-to-home"><a href="./index.html">Về trang chủ</a> </span>
                     </div>
                     <div class="grid__column-3 navbar__brand">
                         <h1 class="navbar__brand-text">Luxstay</h1>
@@ -94,7 +330,7 @@
             </div>
         </div>
 
-        <div class="slider">
+        <div class="slider slider-hidd-on--mobile">
             <ul class="slider__list">
                 <li class="slider__item slider__item--active"><a href="" class="slider__item-link">HOME</a></li>
                 <li class="slider__item"><a href="" class="slider__item-link">HOTEL REVIEW</a></li>
@@ -1008,6 +1244,21 @@
             </div>
         </div>
     </div>
+    <div class="grid">
+        <div class="util-mobile">
+            <div class="util-mobile__search">
+                <i class="util-mobile__search--icon ti-search"></i>
+                <p class="util-mobile__search--text">Khám phá</p>
+            </div>
+
+            <div class="util-mobile__option">
+                <i class="util-mobile__option--icon ti-menu"></i>
+                <p class="util-mobile__option--text">Tuỳ chọn</p>
+            </div>
+
+        </div>
+    </div>
+    
 </body>
 
 </html>

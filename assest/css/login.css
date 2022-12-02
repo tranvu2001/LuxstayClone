@@ -1106,6 +1106,17 @@ button:disabled.btn {
 
 /* Mobile */
 @media (max-width: 739px) {
+    button.back {
+        font-size: 5rem;
+        padding: 20px;
+        margin-bottom: 24px;
+        background-image: linear-gradient(90deg, #f65e38, #f68a39, #f65e38);
+        color: var(--white-color);
+        border-radius: 50px;
+        border: none;
+        outline: none;
+    }
+
     .banner {
         height: 270px;
         margin-top: unset;
@@ -1343,6 +1354,10 @@ button:disabled.btn {
         height: 470px;
     }
 
+    .search__guest--modal.show {
+        opacity: 1;
+    }
+
     .guest__type {
         height: 100px;
     }
@@ -1459,5 +1474,19 @@ button:disabled.btn {
     .navbar-right__languages {
         padding: 20px 50px;
         margin-top: 60px;
+    }
+
+    .back-to-home {
+        padding: 20px;
+        background-image: linear-gradient(90deg, #f65e38, #f68a39, #f65e38);
+        border-radius: 50px;
+        margin: 20px 20px 20px 20px;
+        display: inline-block;
+    }
+
+    .back-to-home a {
+        font-size: 5rem;
+        text-decoration: none;
+        color: var(--white-color);
     }
 }
